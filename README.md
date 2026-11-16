@@ -1,6 +1,6 @@
 # 🎵 Sistema Musical
 
-Um sistema web desenvolvido em PHP e MySQL para gerenciamento, cadastro e listagem de artistas e músicas, contando com autenticação de usuários e suporte para upload/exibição de capas de álbuns e fotos de artistas.
+Um sistema web desenvolvido em HTML e MySQL para gerenciamento, cadastro e listagem de artistas e músicas, contando com autenticação de usuários e suporte para upload/exibição de capas de álbuns e fotos de artistas.
 
 ---
 
