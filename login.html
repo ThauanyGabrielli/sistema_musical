@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- DOCTYPE: Avisa ao navegador que esta página é HTML5 -->
+<html lang="pt-br">
+<!-- pt-br: define o idioma da página -->
+
+<head>
+    <!-- HEAD: configurações da página -->
+    <meta charset="UTF-8">
+    <!-- Libera a acentuação -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport: define o tamanho da janela para caber no celular -->
+    <title>Login - Sistema Musical</title>
+    <!-- title: define o título da página que aparece na aba do navegador -->
+     <link rel="icon" href="data:image/svg+xml,<svg xmnls=%27htto://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🎵</text></svg>">
+    <!-- icon: define o ícone da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="style.css">
+    <!-- stylesheet: define o estilo da página -->
+</head>
+
+<!-- A Classe login-page é usada no CSS para centralizar o cartão no meio da tela-->
+<body class="login-page">
+
+    <!-- login-card: a caixa branca que guarda o login inteiro -->
+    <div class="login-card">
+        
+    <!-- login-header: título,subtítulo, centradlizados pelo css. -->
+        <div class="login-header">
+            <h1>Sistema Musical</h1>
+            <p>Entre com suas credenciais</p>
+        </div>
+        
+        <!--
+        FORM: o formulário de login.
+        method="post": envia os dados escondidos (não aparece o endereço).
+        action="#": por enquanto não envia para lugar nenhum.
+        Na Sprint 2 (back-end), o action vai mandar os dados para o PHP.
+         -->
+        <form method="post" action="#">
+
+        <!-- form-group: Junta um rótulo (label) e um campo de entrada (input) -->
+         <div class="form-group">
+            <!-- for="usuario" é igual ao id do input: clicar no texto foca o campo. -->
+            <label for="username">Usuário</label>
+            <input type="text" 
+            id="usuario" 
+            name="usuario" 
+            required
+            autocomplete="username"
+            placeholder="Seu usuário">
+            <!-- 
+            type="text": campo de texto comum.
+            name: O Nome do dado que o PHP vai receber na print 2.
+            required: O Servidor não deixa enviar vazio.
+            autocomplete: o navegador pode sugerir usuário salvo.
+            placeholder: a dica cinza dentro do campo.
+            -->
+    </div>
+
+    <div class="form-group">
+        <label for="senha">Senha</label>
+        <!-- type="password": esconde o que a pessoa digita, mostrando bolinhas. -->
+        <input type="password" 
+        id="senha" 
+        name="senha" 
+        required
+        autocomplete="current-password"
+        placeholder="Sua senha">
+    </div>
+
+    <!-- type="submit": botão que envia o formulário.class btn: estiliza o botão para ficar azul. -->
+    <button type="submit" class="btn-primary">Entrar</button>
+    </form>
+
+    <!-- login hint: a dica com as credenciai de teste.<code> mostra em fonte de código. -->
+    <div class="login-hint">
+        <strong>Credenciais de teste:</strong><br>
+        Usuário: <code>admin</code> &nbsp;·&nbsp; Senha: <code>123</code>
+        <!-- espaço que não quebra de linha: &nbsp; -->
+    </div>
+
+    </div>
+</body>
+</html>
